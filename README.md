@@ -1,7 +1,7 @@
 # assortment_optimization
 Source code from my Master's thesis @Polytechnique Montréal. A solution to the assortment optimization problem, able to deal with large numbers of products. 
 
-This code contains my implementation of ome parts of the code described in [1]
+This code contains my implementation of some parts of the code described in [1]
 Besides, it also contains the implementation that I used to conduct my works of Master by research @ Polytechnique Montréal.
 
 ##What are the main steps of the proposed solution?
