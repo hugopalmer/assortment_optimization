@@ -21,7 +21,7 @@ import sys
 #  The user should only modify the parameters in this section
 #if eps_stop is different than 0, NB_ITER ignored
 NB_ITER = 10
-eps_stop= 0.001
+eps_stop= 0
 
 try:
     algo_chosen =    sys.argv[2]
@@ -81,7 +81,6 @@ abs_file_choice_model_BM = os.path.join(script_dir, rel_path_choice_model_BM)
 
 #  End of the importation
 #############################
-
 
 
 #############################

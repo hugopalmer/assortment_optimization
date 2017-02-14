@@ -54,10 +54,12 @@ def run_BM(Inventories, Proba_product, ITERATIONS_MAX=10, eps_stop=0):
     for first_cols in range(FIRST_RANDOM_COLS):
         sigma_found = random_sigma_first_fixed(nb_prod, first_cols%nb_prod, randint(0,nb_prod-1))
         [A, sigma_CG] = formatting(A, sigma_CG, sigma_found, nb_prod, Inventories, first_cols)
-    
-    #first execution of the master problem
-    [lambda_found, alpha_found, nu_found, obj_val_master] = \
-        utilities.restricted_master(A, v, verbose=False)
+
+    # first call to restricted master: we initialize the GUROBI model
+    model = Model('finding_lambda')
+
+    [lambda_found, alpha_found, nu_found, obj_val_master, time_method] = \
+        utilities.restricted_master(A, v, model, verbose=False)
     
     #we save the objective value of this iteration
     history_obj_val[0] = obj_val_master
@@ -66,8 +68,8 @@ def run_BM(Inventories, Proba_product, ITERATIONS_MAX=10, eps_stop=0):
     [lambda_found, sigma_CG, A, nb_col_gen]= clean_columns(lambda_found, sigma_CG, A)
     
     #reoptimization, without the unusefull columns
-    [lambda_found, alpha_found, nu_found, obj_val_master] = \
-        utilities.restricted_master(A, v, verbose=False)
+    [lambda_found, alpha_found, nu_found, obj_val_master, time_method] = \
+        utilities.restricted_master(A, v, model, verbose=False)
     #end of the warm start phase
     
     #Loop for column generation
@@ -91,7 +93,7 @@ def run_BM(Inventories, Proba_product, ITERATIONS_MAX=10, eps_stop=0):
             for i in range(len(red_costs_to_keep)):
                 [A, sigma_CG] = formatting(A, sigma_CG, sigma_to_keep[i], nb_prod, Inventories, 1)
             #execution of the master problem
-            [lambda_found, alpha_found, nu_found, obj_val_master] = utilities.restricted_master(A, v, verbose=False)
+            [lambda_found, alpha_found, nu_found, obj_val_master, time_method] = utilities.restricted_master(A, v, model, verbose=False)
             history_obj_val = np.append(history_obj_val, obj_val_master)
         else:
             print("No column found at iteration", w)

@@ -24,7 +24,7 @@ import sys
 min_capacity = 0
 max_capacity = 1000#unconstrained
 
-verbose=False #should GUROBI print the steps of solving of the problem?
+verbose=True #should GUROBI print the steps of solving of the problem?
 
 try:
     algo_chosen =    sys.argv[2]
@@ -108,7 +108,7 @@ elif(algo_chosen=='gen'):
 else:
     print("Error; wrong input parameter, which algorithm do you wish to use?")
 
-(nb_prod, nb_asst) = Inventories_train.shape
+(nb_asst, nb_prod) = Inventories_train.shape
 #  End of the importation
 #############################
 

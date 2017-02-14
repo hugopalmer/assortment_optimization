@@ -19,7 +19,7 @@ import sys
 #  The user should only modify the parameters in this section
 
 #Hyper-parameters of the data-set
-nb_prod=20      #number of old products
+nb_prod=100      #number of old products
 M = 20          #number of assortments for the training set
 
 try:
