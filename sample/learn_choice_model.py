@@ -101,7 +101,8 @@ else:
 #############################
 
 
-
+print("History of objective values:")
+print(history_obj_val)
 
 
 ##############################

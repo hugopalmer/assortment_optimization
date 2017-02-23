@@ -12,6 +12,16 @@ initialized = False #set to true once the init_model() function has been called 
 nb_col_previous = 0
 lmbda = {}
 
+use_warm_start = False
+norm_chosen = 2  # parameter: choose 1 (for L1) or 2 (for L2)
+method_to_use_first_iteration = 2#for first cold start solve, the barrier (method=2) method should be the most efficient
+method_to_use_iterations = 2 #for warm starting, the dual simplex (method=1) method should be the most efficient
+
+#beware of incompatibilities: it is impossible to use warm start with VBasis/CBasis
+# with L2 norm with a method using something else than the simplex method (methods= 0 (primal simplex) or 1 (dual simplex) )
+if use_warm_start and (norm_chosen==2) and (method_to_use_first_iteration >1 or method_to_use_iterations>1):
+    raise Exception('Incompatible parameters!')
+
 #initializes the model
 def init_model(A, v, model, verbose=False):
     global initialized
@@ -30,10 +40,32 @@ def init_model(A, v, model, verbose=False):
         lmbda[0] = model.addVar(lb=0, vtype=GRB.CONTINUOUS, name='lambda_0',obj=0)
     eps_p = {}
     eps_m = {}
-    for i in range(nb_prod):
-        for m in range(nb_asst):
-            eps_p[i,m] = model.addVar(lb=0, name='eps_p_%s_%s' % (i,m), obj=1)
-            eps_m[i,m] = model.addVar(lb=0, name='eps_m_%s_%s' % (i,m), obj=1)
+
+
+    if norm_chosen == 1:
+        for i in range(nb_prod):
+            for m in range(nb_asst):
+                eps_p[i,m] = model.addVar(lb=0, name='eps_p_%s_%s' % (i,m), obj=1)
+                eps_m[i,m] = model.addVar(lb=0, name='eps_m_%s_%s' % (i,m), obj=1)
+    elif norm_chosen == 2:
+        quadExpr_obj = QuadExpr()
+
+        for i in range(nb_prod):
+            for m in range(nb_asst):
+                eps_p[i,m] = model.addVar(lb=0, name='eps_p_%s_%s' % (i,m), obj=0)
+                eps_m[i,m] = model.addVar(lb=0, name='eps_m_%s_%s' % (i,m), obj=0)
+
+        model.update()
+
+        for i in range(nb_prod):
+            for m in range(nb_asst):
+                quadExpr_obj += eps_p[i,m]*eps_p[i,m] + eps_m[i,m]*eps_m[i,m]
+        #print("quadExpr_obj:",quadExpr_obj)
+        #set the objective function
+        model.setObjective(quadExpr_obj)
+    else:
+        print("Wrong input; please choose L1 or L2")
+
     model.ModelSense = 1 #Minimization
     model.update()
 
@@ -87,14 +119,15 @@ def get_primal_dual_variables(model, A):
 #automatically detects if we have already found a solution (=> warm start) or if we need to initialize the problem
 def restricted_master(A, v, model, verbose=False):
     if not initialized:
-        #for first cold start solve, the barrier (method=2) method should be the most efficient
-        model.setParam("Method", 2)
+        model.setParam("Method", method_to_use_first_iteration)
         [model, lmbda] = init_model(A, v, model, verbose=False)
     else:
         #print("warm start")
-        #for warm starting, the dual simplex (method=1) method should be the most efficient
-        model.setParam("Method", 1)
-        continue_warm_start(A[len(A)-nb_col_previous:,:,:], model)
+        model.setParam("Method", method_to_use_iterations)
+        if use_warm_start:
+            continue_warm_start(A[len(A)-nb_col_previous:,:,:], model)
+        else:
+            continue_no_warm_start(A[len(A) - nb_col_previous:, :, :], model)
 
     model.optimize()
     time_method=model.Runtime
@@ -130,6 +163,35 @@ def continue_warm_start(A_add, model):
     nb_col_previous = len(A_add)
 
     return 1#model
+
+
+#same than before, but we do not attempt to warm-start
+def continue_no_warm_start(A_add, model):
+    global lmbda
+    #(nb_col, nb_prod, nb_asst) = A_add.shape
+
+    vars = model.getVars()
+    constrs = model.getConstrs()
+
+    # save the basis before creation of the variables
+    #[VBASES, CBASES] = saveStateWarmBasis(vars, constrs)
+
+    # create the new variables
+    size_lmbda = len(lmbda.keys())
+    new_vars = {}#np.zeros(len(A_add))
+    for k in range(len(A_add)):
+        new_vars[k] = addNewVar(model, constrs, a_col = A_add[k,:,:])
+        lmbda[size_lmbda+k] = new_vars[k]
+
+    #loadStateWarmBasis(vars, constrs, VBASES, CBASES)
+    #for k in range(len(A_add)):
+    #    new_vars[k].setAttr("VBasis", -1)
+
+    nb_col_previous = len(A_add)
+
+    return 1#model
+
+
 
 
 #############################

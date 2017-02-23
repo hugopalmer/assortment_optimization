@@ -5,40 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ead0676c-75e5-455a-b800-40aaf2ba61cf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_BM_001.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_BM_010.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_001.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_010.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_040.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_050.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_099.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_400.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_900.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_gen_400.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/choice_model_gen_900.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/features_data_400.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/features_data_900.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_001.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_010.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_040.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_050 - Copie.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_050.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_099.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_201.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_400.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_900.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/data/transaction_data_GDT.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/assortment_optimization.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/assortment_optimization.py" afterPath="$PROJECT_DIR$/sample/assortment_optimization.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/generation_data_products_based.py" afterPath="$PROJECT_DIR$/sample/generation_data_products_based.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_099.dat" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_099.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/gurobi.log" afterPath="$PROJECT_DIR$/sample/gurobi.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/learn_choice_model.py" afterPath="$PROJECT_DIR$/sample/learn_choice_model.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/lib/gen_BM.py" afterPath="$PROJECT_DIR$/sample/lib/gen_BM.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/lib/gen_GDT.py" afterPath="$PROJECT_DIR$/sample/lib/gen_GDT.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/lib/utilities.py" afterPath="$PROJECT_DIR$/sample/lib/utilities.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +26,40 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="utilities.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding>
+                <element signature="e#184#202#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="learn_choice_model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/learn_choice_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gen_GDT.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,12 +72,14 @@
     <findStrings>
       <find>restricted_master</find>
       <find>Status</find>
-      <find>Method</find>
       <find>print</find>
-      <find>method</find>
       <find>loadStateWarmBasis</find>
       <find>Output</find>
       <find>init_model</find>
+      <find>method</find>
+      <find>warm</find>
+      <find>print(&quot;warm</find>
+      <find>Method</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,7 +91,6 @@
         <option value="$PROJECT_DIR$/sample/evaluation.py" />
         <option value="$PROJECT_DIR$/test/test_eval_gen.py" />
         <option value="$PROJECT_DIR$/sample/evaluation_error.py" />
-        <option value="$PROJECT_DIR$/sample/learn_choice_model.py" />
         <option value="$PROJECT_DIR$/sample/generation_data_features_based.py" />
         <option value="$PROJECT_DIR$/sample/lib/gen_GDT_cplex.py" />
         <option value="$PROJECT_DIR$/sample/lib/gen_BM_cplex.py" />
@@ -96,6 +100,7 @@
         <option value="$PROJECT_DIR$/sample/lib/gen_BM.py" />
         <option value="$PROJECT_DIR$/sample/lib/gen_GDT.py" />
         <option value="$PROJECT_DIR$/sample/lib/SAVE_previous_utilities.py" />
+        <option value="$PROJECT_DIR$/sample/learn_choice_model.py" />
         <option value="$PROJECT_DIR$/sample/lib/utilities.py" />
       </list>
     </option>
@@ -127,7 +132,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -174,7 +179,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,7 +448,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -483,6 +488,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#184#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2125">
           <caret line="125" column="5" lean-forward="false" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
         </state>
@@ -492,9 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -538,9 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -562,9 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,13 +680,6 @@
     <entry file="file://$PROJECT_DIR$/sample/lib/utilities_cplex.py" />
     <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT_cplex.py" />
     <entry file="file://$PROJECT_DIR$/sample/lib/gen_BM_cplex.py" />
-    <entry file="file://$PROJECT_DIR$/sample/learn_choice_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample/lib/fcns_generalize.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -711,22 +710,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
+    <entry file="file://$PROJECT_DIR$/sample/learn_choice_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="e#184#202#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="507">
+          <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="84" column="73" lean-forward="false" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="73" />
+        <state relative-caret-position="192">
+          <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#184#202#0" expanded="true" />
           </folding>
         </state>
       </provider>
