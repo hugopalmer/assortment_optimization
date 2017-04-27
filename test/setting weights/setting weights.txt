@@ -1,0 +1,28 @@
+case 1: weights set to their actual value 'artificially'
+Corrected error, old: 0.06199719613 ; Error per old product: 0.00275543093911 ; eps_old: 0.0826629281734
+Corrected error, new: 0.0116748988668 ; Error per new product: 0.0046699595467 ; eps_new: 0.046699595467
+orrected error, old: 0.0874695974479 ; Error per old product: 0.00388753766435 ; eps_old: 0.116626129931
+Corrected error, new: 0.0112807285547 ; Error per new product: 0.00451229142188 ; eps_new: 0.0451229142188
+Corrected error, old: 0.109237022191 ; Error per old product: 0.00485497876406 ; eps_old: 0.145649362922
+Corrected error, new: 0.0156884281347 ; Error per new product: 0.00627537125387 ; eps_new: 0.0627537125387
+
+
+
+
+case 2 : weights set uniformly to 1
+Corrected error, old: 0.118828564125 ; Error per old product: 0.00528126951669 ; eps_old: 0.158438085501
+Corrected error, new: 0.0231223366839 ; Error per new product: 0.00924893467354 ; eps_new: 0.0924893467354
+Corrected error, old: 0.0935389242699 ; Error per old product: 0.00415728552311 ; eps_old: 0.124718565693
+Corrected error, new: 0.0130045234883 ; Error per new product: 0.00520180939534 ; eps_new: 0.0520180939534
+Corrected error, old: 0.0688232106023 ; Error per old product: 0.0030588093601 ; eps_old: 0.0917642808031
+Corrected error, new: 0.0264255071042 ; Error per new product: 0.0105702028417 ; eps_new: 0.105702028417
+
+
+
+case 3: guessing weights
+
+
+
+
+
+

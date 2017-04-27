@@ -72,23 +72,15 @@ def run_GDT(Inventories, Proba_product, ITERATIONS_MAX=10, eps_stop=0):
         # chooses the N lowest reduced costs among the branches of lambda_found, and returns the new_sigma_GDT with the new sigmas
         [new_sigma_GDT, new_A, new_rc] = lowest_reduced_cost(set_k_possible, sigma_GDT, nb_prod, alpha_found, nu_found,
                                                              Inventories, 20)
-
+        #print("new_rc", new_rc)
         # concatenates sigma, A
         sigma_GDT = np.concatenate((sigma_GDT, new_sigma_GDT), axis=0)
         A = np.concatenate((A, new_A), axis=0)
 
         nb_col = len(A)
 
-
-
-
         [lambda_found, alpha_found, nu_found, obj_val_master, time_method] = \
             utilities.restricted_master(A, v, model, verbose=False)
-
-
-
-
-
 
         history_obj_val = np.append(history_obj_val, obj_val_master)
         history_time_method = np.append(history_time_method, time_method)
@@ -100,6 +92,8 @@ def run_GDT(Inventories, Proba_product, ITERATIONS_MAX=10, eps_stop=0):
         # checking the stop criterion if this is not with a defined number of iterations
         if (obj_stop > 0 and obj_val_master < obj_stop):
             break
+        else:
+            print(obj_val_master, "> value fixed=", obj_stop)
 
     # we keep only the nonzero components of lambda, and sigma associated
     a = sigma_GDT[np.nonzero(lambda_found)]

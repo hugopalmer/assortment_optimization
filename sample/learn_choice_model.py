@@ -20,8 +20,8 @@ import sys
 #  Declarations of parameters 
 #  The user should only modify the parameters in this section
 #if eps_stop is different than 0, NB_ITER ignored
-NB_ITER = 10
-eps_stop= 0
+NB_ITER = 200
+eps_stop= 0.01
 
 try:
     algo_chosen =    sys.argv[2]
@@ -127,9 +127,12 @@ elif(algo_chosen=='BM'):
 else:
     print("Error; wrong input parameter, which algorithm do you wish to use?")
 
-print("Learning completed")
+print("Learning completed in ", t2-t1, "seconds.")
 print("Choice model file has been saved in /sample/data/.")
 print("#######################################################################################")
+
+#gen_GDT.sigma_digest(sigma_BM_sorted, lambda_BM_sorted, len(sigma_BM_sorted.T))
+
 
 #  End of the exportation
 #############################

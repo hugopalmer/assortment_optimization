@@ -48,6 +48,7 @@ from random import randint
 import pickle
 import time
 import lib.fcns_asstopt as fcns_asstopt
+from lib.utilities import revenue_MMNL
 
 filename_transaction        = 'transaction_data_'+  data_version + '.dat'
 filename_choice_model_GDT   = 'choice_model_GDT_'+  data_version + '.dat'
@@ -118,21 +119,36 @@ else:
 #  In the case of GDT, we have to convert the choice model to the shape of a BM choice model
 # the number of sub-columns to add is tuned by the parameters threshold, min_sub_col_per_col
 if(algo_chosen=='GDT' or algo_chosen=='gen' ):
-    [Lambda, Sigma] = fcns_asstopt.convert_GDT_to_bigBM(lambda_GDT_sorted, sigma_GDT_sorted, threshold, min_sub_col_per_col)
+    if(0):#1: old fashioned
+        [Lambda, Sigma] = fcns_asstopt.convert_GDT_to_bigBM(lambda_GDT_sorted, sigma_GDT_sorted, threshold,
+                                                            min_sub_col_per_col)
+        t1 = time.time()
+        [x_found, obj_val] = fcns_asstopt.run_asstopt(Lambda, Sigma, Revenue[:len(Sigma.T)], min_capacity, max_capacity,
+                                                      verbose=verbose)
+    else:
+        Lambda = lambda_GDT_sorted
+        Sigma = sigma_GDT_sorted
+        t1 = time.time()
+        [x_found, obj_val] = fcns_asstopt.run_asstopt_GDT(Lambda, Sigma, Revenue[:len(Sigma.T)], min_capacity, max_capacity,
+                                                      verbose=verbose)
+    t2 = time.time()
 elif(algo_chosen=='BM'):
     Lambda = lambda_BM_sorted
     Sigma = sigma_BM_sorted
+    t1 = time.time()
+    [x_found, obj_val] = fcns_asstopt.run_asstopt(Lambda, Sigma, Revenue[:len(Sigma.T)], min_capacity, max_capacity,
+                                                      verbose=verbose)
+    t2 = time.time()
 else:
     print("Error; wrong input parameter, which algorithm do you wish to use?")
+
 
 #  End of the conversion
 #############################
 
 #############################
 #  Calls the assortment optimization
-t1=time.time()
-[x_found, obj_val] = fcns_asstopt.run_asstopt(Lambda, Sigma, Revenue[:len(Sigma.T)], min_capacity, max_capacity, verbose=verbose)
-t2=time.time()
+# done previously
 #Revenue[:len(Sigma.T)] is the selection of the old products or the new products, depending what is provided in the choice model dataset.
 #  End calling the assortment optimization
 #############################
@@ -146,6 +162,9 @@ print("Optimal assortment found in", t2-t1, "seconds. Products present in optima
 print(x_found)
 print("Expected revenue of the optimal assortment:")
 print('{:04.2f}'.format(obj_val), "$")
+
+print("GT-based revenue of the assortment:")
+print(revenue_MMNL(x_found.reshape((1,-1)), u, p, Revenue)[0])
 
 print("Assortment optimization completed")
 print("#######################################################################################")

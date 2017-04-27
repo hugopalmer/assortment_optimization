@@ -19,7 +19,7 @@ import sys
 #  The user should only modify the parameters in this section
 
 #Hyper-parameters of the data-set
-nb_prod=100      #number of old products
+nb_prod=50      #number of old products
 M = 20          #number of assortments for the training set
 
 try:
@@ -99,6 +99,9 @@ for t in range(T):
     mask=rand_bin_array(nb_fav_prod, nb_prod)
     u[t,:] = np.log(q[t,:] * ( L*mask + 1*np.logical_not(mask) ))
 
+#influence of no-choice option:
+u[:,0] = u[:,0] + 0
+
 #mixing probabilities of the MMNL model
 p=unit_simplex(T)
 
@@ -177,3 +180,5 @@ print("End of generation of data. File ", filename_transaction, "has been saved 
 print("#######################################################################################")
 #  end of exportation of the generated data
 #####################################
+
+print("Average probability of no-choice:", np.average(Proba_product_train[:,0]))

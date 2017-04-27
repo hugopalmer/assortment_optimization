@@ -1,0 +1,15 @@
+600
+Corrected error, old: 0.118423211044 ; Error per old product: 0.00526325382417 ; eps_old: 0.157897614725
+Corrected error, new: 0.0185498848937 ; Error per new product: 0.0074199539575 ; eps_new: 0.074199539575
+
+601
+Corrected error, old: 0.0820665890449 ; Error per old product: 0.00364740395755 ; eps_old: 0.109422118727
+Corrected error, new: 0.0138887738519 ; Error per new product: 0.00555550954077 ; eps_new: 0.0555550954077
+
+603
+Corrected error, old: 0.0650794841375 ; Error per old product: 0.00289242151722 ; eps_old: 0.0867726455166
+Corrected error, new: 0.0183838874937 ; Error per new product: 0.00735355499749 ; eps_new: 0.0735355499749
+
+610
+Corrected error, old: 0.102759583638 ; Error per old product: 0.00456709260611 ; eps_old: 0.137012778183
+Corrected error, new: 0.0215776888106 ; Error per new product: 0.00863107552425 ; eps_new: 0.0863107552425

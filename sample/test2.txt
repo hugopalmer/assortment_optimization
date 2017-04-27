@@ -1,0 +1,195 @@
+
+Gurobi 6.5.0 (win64) logging started 02/14/17 18:09:42
+
+Changed value of parameter LogFile to my_log.txt
+   Prev: gurobi.log  Default: 
+Optimize a model with 1001 rows, 2050 columns and 15050 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Presolve removed 480 rows and 960 columns
+Presolve time: 0.01s
+Presolved: 521 rows, 1090 columns, 14090 nonzeros
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ Dense cols : 49
+ AA' NZ     : 1.324e+04
+ Factor NZ  : 1.549e+04 (roughly 1 MByte of memory)
+ Factor Ops : 4.548e+05 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.04000000e+02  0.00000000e+00  5.00e+00 0.00e+00  1.38e-01     0s
+   1   1.61822444e+01 -6.62269155e-02  2.83e-01 0.00e+00  1.50e-02     0s
+   2   5.25819131e+00  5.86172795e-01  7.20e-02 0.00e+00  4.31e-03     0s
+   3   1.96706958e+00  1.21228622e+00  6.59e-03 0.00e+00  6.97e-04     0s
+   4   1.64044705e+00  1.50463487e+00  8.15e-04 0.00e+00  1.25e-04     0s
+   5   1.60855402e+00  1.57203716e+00  2.51e-04 0.00e+00  3.37e-05     0s
+   6   1.59458080e+00  1.58970161e+00  2.11e-05 0.00e+00  4.50e-06     0s
+   7   1.59327520e+00  1.59194061e+00  4.61e-06 0.00e+00  1.23e-06     0s
+   8   1.59293816e+00  1.59282297e+00  5.83e-07 1.54e-13  1.06e-07     0s
+   9   1.59287712e+00  1.59287684e+00  1.30e-14 2.23e-13  2.55e-10     0s
+  10   1.59287701e+00  1.59287701e+00  2.91e-13 5.10e-14  2.55e-13     0s
+
+Barrier solved model in 10 iterations and 0.05 seconds
+Optimal objective 1.59287701e+00
+
+Crossover log...
+
+       0 DPushes remaining with DInf 2.9976022e-14                 0s
+
+       0 PPushes remaining with PInf 0.0000000e+00                 0s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 2.9976022e-14      0s
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+      31    1.5928770e+00   0.000000e+00   0.000000e+00      0s
+      31    1.5928770e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 31 iterations and 0.07 seconds
+Optimal objective  1.592877011e+00
+Changed value of parameter Method to 1
+   Prev: 2  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2100 columns and 25250 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -9.0164978e+31   1.604803e+32   9.016498e+01      0s
+     307    1.2876354e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 307 iterations and 0.05 seconds
+Optimal objective  1.287635445e+00
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2150 columns and 32650 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -8.1988814e+31   1.548420e+32   8.198881e+01      0s
+     378    9.7254262e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 378 iterations and 0.07 seconds
+Optimal objective  9.725426158e-01
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2200 columns and 38500 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -7.2649304e+31   4.132638e+32   7.264930e+01      0s
+     316    8.2726933e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 316 iterations and 0.07 seconds
+Optimal objective  8.272693284e-01
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2250 columns and 44300 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -6.4674580e+31   1.653575e+32   6.467458e+01      0s
+     331    7.6204246e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 331 iterations and 0.09 seconds
+Optimal objective  7.620424559e-01
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2300 columns and 50075 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -6.1216881e+31   5.025739e+32   6.121688e+01      0s
+     329    6.8475965e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 329 iterations and 0.10 seconds
+Optimal objective  6.847596460e-01
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2350 columns and 56025 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -5.8477280e+31   1.534932e+32   5.847728e+01      0s
+     388    5.8214132e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 388 iterations and 0.13 seconds
+Optimal objective  5.821413244e-01
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2400 columns and 61375 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -6.1651673e+31   4.053308e+32   6.165167e+01      0s
+     433    4.8813501e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 433 iterations and 0.16 seconds
+Optimal objective  4.881350074e-01
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2450 columns and 66425 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.8346015e+31   1.305346e+32   4.834601e+01      0s
+     311    4.3616347e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 311 iterations and 0.13 seconds
+Optimal objective  4.361634687e-01
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2500 columns and 71525 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.8132826e+31   5.251601e+32   4.813283e+01      0s
+     431    4.0394264e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 431 iterations and 0.19 seconds
+Optimal objective  4.039426384e-01
+Parameter Method unchanged
+   Value: 1  Min: -1  Max: 4  Default: -1
+Optimize a model with 1001 rows, 2550 columns and 76275 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [0e+00, 0e+00]
+  RHS range       [1e-02, 1e+00]
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.5944962e+31   5.673263e+32   4.594496e+01      0s
+     367    3.8785398e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 367 iterations and 0.24 seconds
+Optimal objective  3.878539826e-01

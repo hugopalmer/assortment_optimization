@@ -20,13 +20,13 @@ import sys
 #  The user should only modify the parameters in this section
 
 #Hyper-parameters of the data-set
-nb_prod=20      #number of old products
-nb_new_prod=5   #number of new products
+nb_prod=30      #number of old products
+nb_new_prod=10   #number of new products
 nb_feat=50      #number of features. Should be at least twice the number of products
 M = 20          #number of assortments for the training set
 
 try:
-    data_version =  sys.argv[1]
+    data_version = sys.argv[1]
 except:
     print("Error; wrong input parameter, which data version id do you wish to generate?")
 
@@ -249,3 +249,5 @@ print("End of generation of data. Files ", filename_transaction, "and", filename
 print("#######################################################################################")
 #  end of exportation of the generated data
 #####################################
+
+print("Average probability of no-choice:", np.average(Proba_product_train[:,0]))

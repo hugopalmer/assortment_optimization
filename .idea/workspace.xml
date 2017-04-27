@@ -5,10 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ead0676c-75e5-455a-b800-40aaf2ba61cf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_099.dat" afterPath="$PROJECT_DIR$/sample/data/choice_model_GDT_099.dat" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_BM_001.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_BM_010.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_001.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_010.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_040.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_050.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_099.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_400.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_GDT_900.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_gen_400.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/choice_model_gen_900.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/data_directory.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/features_data_400.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/features_data_900.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_001.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_010.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_040.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_050 - Copie.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_050.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_099.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_400.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_900.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/data/transaction_data_GDT.dat" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/data/transaction_data_201.dat" afterPath="$PROJECT_DIR$/sample/data/transaction_data_201.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/assortment_optimization.py" afterPath="$PROJECT_DIR$/sample/assortment_optimization.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/execute.bat" afterPath="$PROJECT_DIR$/sample/execute.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/generation_data_features_based.py" afterPath="$PROJECT_DIR$/sample/generation_data_features_based.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/generation_data_products_based.py" afterPath="$PROJECT_DIR$/sample/generation_data_products_based.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/gurobi.log" afterPath="$PROJECT_DIR$/sample/gurobi.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/learn_choice_model.py" afterPath="$PROJECT_DIR$/sample/learn_choice_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/lib/fcns_asstopt.py" afterPath="$PROJECT_DIR$/sample/lib/fcns_asstopt.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/lib/fcns_generalize.py" afterPath="$PROJECT_DIR$/sample/lib/fcns_generalize.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/lib/gen_GDT.py" afterPath="$PROJECT_DIR$/sample/lib/gen_GDT.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/lib/utilities.py" afterPath="$PROJECT_DIR$/sample/lib/utilities.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,13 +57,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="utilities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="utilities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="-12">
+              <caret line="86" column="29" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fcns_asstopt.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sample/lib/fcns_asstopt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="153" selection-end-column="33" />
               <folding>
-                <element signature="e#184#202#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +82,8 @@
       <file leaf-file-name="learn_choice_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample/learn_choice_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+            <state relative-caret-position="374">
+              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -53,7 +93,27 @@
         <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="39" />
+              <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assortment_optimization.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/assortment_optimization.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="106" column="49" lean-forward="true" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generation_data_products_based.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/generation_data_products_based.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -80,6 +140,17 @@
       <find>warm</find>
       <find>print(&quot;warm</find>
       <find>Method</find>
+      <find>compute_</find>
+      <find>weight</find>
+      <find>Invento</find>
+      <find>Inventories[</find>
+      <find>user</find>
+      <find>BM</find>
+      <find>utilities</find>
+      <find>CBasis</find>
+      <find>alpha</find>
+      <find>restricted</find>
+      <find>get_primal_dual_variables</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,17 +162,20 @@
         <option value="$PROJECT_DIR$/sample/evaluation.py" />
         <option value="$PROJECT_DIR$/test/test_eval_gen.py" />
         <option value="$PROJECT_DIR$/sample/evaluation_error.py" />
-        <option value="$PROJECT_DIR$/sample/generation_data_features_based.py" />
         <option value="$PROJECT_DIR$/sample/lib/gen_GDT_cplex.py" />
         <option value="$PROJECT_DIR$/sample/lib/gen_BM_cplex.py" />
         <option value="$PROJECT_DIR$/sample/lib/utilities_cplex.py" />
         <option value="$PROJECT_DIR$/sample/lib/warm_start.py" />
-        <option value="$PROJECT_DIR$/sample/generation_data_products_based.py" />
         <option value="$PROJECT_DIR$/sample/lib/gen_BM.py" />
-        <option value="$PROJECT_DIR$/sample/lib/gen_GDT.py" />
         <option value="$PROJECT_DIR$/sample/lib/SAVE_previous_utilities.py" />
+        <option value="$PROJECT_DIR$/sample/generation_data_features_based.py" />
+        <option value="$PROJECT_DIR$/sample/lib/fcns_generalize.py" />
+        <option value="$PROJECT_DIR$/sample/lib/gen_GDT.py" />
         <option value="$PROJECT_DIR$/sample/learn_choice_model.py" />
+        <option value="$PROJECT_DIR$/sample/assortment_optimization.py" />
+        <option value="$PROJECT_DIR$/sample/generation_data_products_based.py" />
         <option value="$PROJECT_DIR$/sample/lib/utilities.py" />
+        <option value="$PROJECT_DIR$/sample/lib/fcns_asstopt.py" />
       </list>
     </option>
   </component>
@@ -446,27 +520,47 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18094535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18094535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -476,23 +570,99 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sample/lib/generalization_GDT.py</url>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sample/lib/gen_BM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="71" column="48" lean-forward="false" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/generalization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#184#202#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/generalization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/learn_choice_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="118" column="41" lean-forward="false" selection-start-line="118" selection-start-column="41" selection-end-line="118" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/evaluation_error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="96" column="96" lean-forward="false" selection-start-line="96" selection-start-column="80" selection-end-line="96" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/generation_data_features_based.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="260" column="12" lean-forward="false" selection-start-line="260" selection-start-column="4" selection-end-line="260" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/learn_choice_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -631,20 +801,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample/evaluation.py" />
-    <entry file="file://$PROJECT_DIR$/sample/generalization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1261">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/assortment_optimization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_eval_gen.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -653,67 +809,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/generation_data_features_based.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/utilities_cplex.py" />
+    <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT_cplex.py" />
+    <entry file="file://$PROJECT_DIR$/sample/lib/gen_BM_cplex.py" />
+    <entry file="file://$PROJECT_DIR$/sample/lib/warm_start.py" />
+    <entry file="file://$PROJECT_DIR$/sample/lib/SAVE_previous_utilities.py" />
     <entry file="file://$PROJECT_DIR$/sample/evaluation_error.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="87" column="49" lean-forward="false" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
+        <state relative-caret-position="300">
+          <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample/lib/generalization_GDT.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/lib/utilities_cplex.py" />
-    <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT_cplex.py" />
-    <entry file="file://$PROJECT_DIR$/sample/lib/gen_BM_cplex.py" />
-    <entry file="file://$PROJECT_DIR$/sample/lib/fcns_generalize.py">
+    <entry file="file://$PROJECT_DIR$/sample/generalization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/lib/fcns_asstopt.py">
+    <entry file="file://$PROJECT_DIR$/sample/generation_data_features_based.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="3009">
+          <caret line="177" column="41" lean-forward="false" selection-start-line="177" selection-start-column="30" selection-end-line="177" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/lib/warm_start.py" />
-    <entry file="file://$PROJECT_DIR$/sample/generation_data_products_based.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/lib/SAVE_previous_utilities.py" />
     <entry file="file://$PROJECT_DIR$/sample/lib/gen_BM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="17">
           <caret line="71" column="48" lean-forward="false" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/fcns_generalize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample/learn_choice_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+        <state relative-caret-position="374">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/generation_data_products_based.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/assortment_optimization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="106" column="49" lean-forward="true" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -721,17 +883,25 @@
     <entry file="file://$PROJECT_DIR$/sample/lib/gen_GDT.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="85" column="39" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="39" />
+          <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample/lib/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="-12">
+          <caret line="86" column="29" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/lib/fcns_asstopt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="153" selection-end-column="33" />
           <folding>
-            <element signature="e#184#202#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

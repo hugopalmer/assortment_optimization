@@ -12,10 +12,10 @@ initialized = False #set to true once the init_model() function has been called 
 nb_col_previous = 0
 lmbda = {}
 
-use_warm_start = False
-norm_chosen = 2  # parameter: choose 1 (for L1) or 2 (for L2)
+use_warm_start = True
+norm_chosen = 1  # parameter: choose 1 (for L1) or 2 (for L2)
 method_to_use_first_iteration = 2#for first cold start solve, the barrier (method=2) method should be the most efficient
-method_to_use_iterations = 2 #for warm starting, the dual simplex (method=1) method should be the most efficient
+method_to_use_iterations = 1 #for warm starting, the dual simplex (method=1) method should be the most efficient
 
 #beware of incompatibilities: it is impossible to use warm start with VBasis/CBasis
 # with L2 norm with a method using something else than the simplex method (methods= 0 (primal simplex) or 1 (dual simplex) )
@@ -136,6 +136,7 @@ def restricted_master(A, v, model, verbose=False):
     #print("model status", model.Status)
     obj_value = model.ObjVal
     #print("obj value", obj_value)
+    #print("dual variables", alpha)
     return([return_lmbda, alpha, nu, obj_value, time_method])
 
 
@@ -266,3 +267,16 @@ def addNewVar(model, constrs, a_col):
     model.update()
     return var
 
+
+# if Inventories is a boolean array of size (nb_asst_to_evaluate, nb_options), we return the array of size (nb_asst_to_evaluate) with the corresponding revenue
+def revenue_MMNL(Inventories, u, p, Revenue):
+    (nb_class, nb_prod) = u.shape
+    nb_asst = len(Inventories)
+    Proba_product = np.zeros_like(Inventories, dtype=np.float32)
+    for m in range(nb_asst):
+        for i in range(nb_prod):
+            if (Inventories[m, i]):
+                for t in range(nb_class):
+                    Proba_product[m, i] += p[t] * np.exp(u[t, i]) / (np.exp(u[t, Inventories[m, :]]).sum())
+
+    return np.matmul(Proba_product, Revenue)

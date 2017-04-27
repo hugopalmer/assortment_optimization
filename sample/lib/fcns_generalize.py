@@ -1,7 +1,54 @@
 import numpy as np
+import os
+import pickle
+import sys
+
 #from sklearn.ensemble import RandomForestClassifier
 
-#imp = np.zeros(20, np.float32)
+nb_feat=50 #should be coherent with the dataset...
+weights_features = np.ones(nb_feat)
+
+
+def read_weights():
+    global weights_features
+    try:
+        data_version = sys.argv[1]  # the data version #### in the name of the file transaction_data_####.dat
+    except:
+        print("Error; wrong input parameter, which data version id do you wish to generate?")
+
+    filename_transaction = 'transaction_data_' + data_version + '.dat'
+    filename_features = 'features_data_' + data_version + '.dat'
+
+    script_dir = os.path.dirname(__file__)  # absolute dir the script is in
+
+    rel_path_transaction = "data/" + filename_transaction
+    abs_file_transaction = os.path.join(script_dir, rel_path_transaction)
+
+    rel_path_features = "data/" + filename_features
+    abs_file_features = os.path.join(script_dir, rel_path_features)
+
+    with open(abs_file_transaction, 'rb') as sales:
+        my_depickler = pickle.Unpickler(sales)
+        Proba_product_train = my_depickler.load()
+        Inventories_train = my_depickler.load()
+        Proba_product_test = my_depickler.load()
+        Inventories_test = my_depickler.load()
+
+    with open(abs_file_features, 'rb') as sales:
+        my_depickler = pickle.Unpickler(sales)
+        features_new = my_depickler.load()
+        features_old = my_depickler.load()
+
+    for feat in range(nb_feat):
+        weights_features[feat] = Inventories_train[m,i] * features_old[:,feat]
+
+    weights_features[:10] *= 100
+    weights_features[10:20] *= 10
+    weights_features[20:] *= 2
+    return 0
+
+#first time, execution of the function to read the weight of features
+read_weights()
 
 #definition of the distance between two binary features products, that count the number of differences
 def distance(features1, features2):
@@ -9,11 +56,12 @@ def distance(features1, features2):
     #with weights:
     #print(features1)
     #print(features2)
-    
     diff = (features2.astype(int)-features1.astype(int)).astype(np.float32)
-    #diff[:10] *= 50
-    #diff[10:20] *= 5
-    return  (1+np.abs(diff).sum())
+
+    #diff[:10] *= 100
+    #diff[10:20] *= 10
+    #diff[20:] *= 2
+    return 1+(np.abs(diff)*weights_features).sum()
 
 #returns the vector of features of the product ranked rank_prod in permutation sigma, defined by binary_features.Can apply to old or new product
 def features_rank(rank_prod, sigma, features):
